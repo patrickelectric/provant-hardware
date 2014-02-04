@@ -342,6 +342,7 @@ UsedLibrary="/home/martin/Programme/eagle-6.5.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="/home/martin/Programme/eagle-6.5.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="/home/martin/Programme/eagle-6.5.0/lbr/zetex.lbr"
 UsedLibrary="/home/martin/Programme/eagle-6.5.0/lbr/zilog.lbr"
+UsedLibrary="/home/martin/Git/provant-hardware/electronics/lib/provant_custom.lbr"
 UsedLibrary="/home/martin/Programme/eagle-6.5.0/lbr/adafruit/adafruit.lbr"
 UsedLibrary="/home/martin/Programme/eagle-6.5.0/lbr/elektro/e-elektro-zeichnungsrahmen.lbr"
 UsedLibrary="/home/martin/Programme/eagle-6.5.0/lbr/elektro/e-elektromechanische-antriebe.lbr"
@@ -385,10 +386,10 @@ UsedLibrary="/home/martin/Programme/eagle-6.5.0/lbr/other/stm32_lqfp144.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="759 181 1906 694"
+Loc="953 540 1906 1053"
 State=2
 Number=0
 
 [Desktop]
-Screen="1920 1200"
+Screen="3840 1200"
 Window="Win_1"

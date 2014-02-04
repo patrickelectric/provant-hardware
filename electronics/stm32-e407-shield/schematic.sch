@@ -7108,10 +7108,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="IC3" library="linear" deviceset="LM340?-*" device="H" technology="12"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R1" library="adafruit" deviceset="R-US_" device="M1406" value="4k7"/>
-<part name="R2" library="adafruit" deviceset="R-US_" device="M1406" value="4k7"/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="M1406" value="4k7"/>
-<part name="R7" library="adafruit" deviceset="R-US_" device="M1406" value="4k7"/>
+<part name="R1" library="adafruit" deviceset="R-US_" device="0309/V" value="4k7"/>
+<part name="R2" library="adafruit" deviceset="R-US_" device="0204/7" value="4k7"/>
+<part name="R4" library="adafruit" deviceset="R-US_" device="0309/V" value="4k7"/>
+<part name="R7" library="adafruit" deviceset="R-US_" device="0204/7" value="4k7"/>
 <part name="LED1" library="adafruit" deviceset="LED" device="3MM"/>
 <part name="LED2" library="adafruit" deviceset="LED" device="3MM"/>
 <part name="LEDPWR" library="adafruit" deviceset="LED" device="3MM"/>
