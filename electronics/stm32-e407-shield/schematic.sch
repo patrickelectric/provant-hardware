@@ -7066,7 +7066,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="SPI1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="PTH"/>
 <part name="UEXT" library="SparkFun-Connectors" deviceset="M05X2" device="SHD"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -7125,6 +7124,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="T1" library="transistor" deviceset="2N3565" device=""/>
+<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7141,7 +7141,6 @@ polarizado.</text>
 <instance part="SPI1" gate="G$1" x="264.16" y="96.52"/>
 <instance part="UEXT" gate="G$1" x="266.7" y="71.12"/>
 <instance part="GND1" gate="1" x="287.02" y="91.44"/>
-<instance part="SUPPLY1" gate="G$1" x="287.02" y="99.06"/>
 <instance part="SUPPLY2" gate="G$1" x="121.92" y="86.36" rot="R90"/>
 <instance part="GND3" gate="1" x="121.92" y="81.28" rot="R270"/>
 <instance part="SUPPLY3" gate="G$1" x="121.92" y="91.44" rot="R90"/>
@@ -7201,6 +7200,7 @@ polarizado.</text>
 <instance part="GND21" gate="1" x="55.88" y="139.7" rot="R90"/>
 <instance part="SUPPLY11" gate="G$1" x="53.34" y="142.24" rot="R270"/>
 <instance part="T1" gate="G$1" x="43.18" y="86.36"/>
+<instance part="SUPPLY1" gate="G$1" x="276.86" y="99.06" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -7436,12 +7436,6 @@ polarizado.</text>
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="SPI1" gate="G$1" pin="2"/>
-<wire x1="274.32" y1="99.06" x2="287.02" y2="99.06" width="0.1524" layer="91"/>
-<label x="279.4" y="99.06" size="1.778" layer="95"/>
-<pinref part="SUPPLY1" gate="G$1" pin="5V"/>
-</segment>
-<segment>
 <pinref part="ARDUINO1" gate="G$1" pin="5V"/>
 <wire x1="132.08" y1="86.36" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="5V"/>
@@ -7477,6 +7471,11 @@ polarizado.</text>
 <segment>
 <pinref part="U$1" gate="G$1" pin="5V"/>
 <pinref part="SUPPLY11" gate="G$1" pin="5V"/>
+</segment>
+<segment>
+<pinref part="SPI1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY1" gate="G$1" pin="5V"/>
+<wire x1="274.32" y1="99.06" x2="276.86" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB9_I2C1_SDA" class="0">
