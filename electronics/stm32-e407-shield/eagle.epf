@@ -386,7 +386,7 @@ UsedLibrary="/home/martin/Programme/eagle-6.5.0/lbr/other/stm32_lqfp144.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="953 540 1906 1053"
+Loc="580 105 1853 590"
 State=2
 Number=0
 
