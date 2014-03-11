@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9450,7 +9450,7 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LVL" library="provant_custom" deviceset="JYMCU_LOGIC_LEVEL_CONVERTER" device=""/>
+<part name="U$2" library="provant_custom" deviceset="JYMCU_LOGIC_LEVEL_CONVERTER" device=""/>
 <part name="I2C1_ESC" library="con-tycoelectronics" deviceset="RJ11" device="" technology="-2L-B"/>
 <part name="I2C3_IMU" library="con-tycoelectronics" deviceset="RJ11" device="" technology="-2L-B"/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -9596,7 +9596,7 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <instance part="SUPPLY4" gate="G$1" x="152.4" y="63.5" rot="R270"/>
 <instance part="GND9" gate="1" x="22.86" y="63.5" rot="R270"/>
 <instance part="GND10" gate="1" x="22.86" y="40.64" rot="R270"/>
-<instance part="LVL" gate="G$1" x="63.5" y="149.86"/>
+<instance part="U$2" gate="G$1" x="63.5" y="149.86"/>
 <instance part="I2C1_ESC" gate="G$1" x="132.08" y="160.02"/>
 <instance part="I2C3_IMU" gate="G$1" x="132.08" y="134.62"/>
 <instance part="GND11" gate="1" x="124.46" y="129.54" rot="R270"/>
@@ -9843,11 +9843,11 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <pinref part="GND29" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LVL" gate="G$1" pin="GND2"/>
+<pinref part="U$2" gate="G$1" pin="GND2"/>
 <pinref part="GND31" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LVL" gate="G$1" pin="GND1"/>
+<pinref part="U$2" gate="G$1" pin="GND1"/>
 <pinref part="GND32" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9940,7 +9940,7 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <junction x="381" y="71.12"/>
 </segment>
 <segment>
-<pinref part="LVL" gate="G$1" pin="5V"/>
+<pinref part="U$2" gate="G$1" pin="5V"/>
 <pinref part="SUPPLY32" gate="G$1" pin="5V"/>
 <wire x1="78.74" y1="157.48" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
 </segment>
@@ -9994,7 +9994,7 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <wire x1="332.74" y1="22.86" x2="327.66" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LVL" gate="G$1" pin="3V3"/>
+<pinref part="U$2" gate="G$1" pin="3V3"/>
 <pinref part="SUPPLY31" gate="G$1" pin="3.3V"/>
 <wire x1="48.26" y1="157.48" x2="48.26" y2="154.94" width="0.1524" layer="91"/>
 </segment>
@@ -10003,13 +10003,13 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <segment>
 <pinref part="JP1" gate="1" pin="5"/>
 <wire x1="45.72" y1="132.08" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="LVL" gate="G$1" pin="D_L"/>
+<pinref part="U$2" gate="G$1" pin="D_L"/>
 <wire x1="45.72" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="LVL" gate="G$1" pin="C_L"/>
+<pinref part="U$2" gate="G$1" pin="C_L"/>
 <wire x1="48.26" y1="144.78" x2="43.18" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="144.78" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="1" pin="6"/>
@@ -10025,7 +10025,7 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <wire x1="101.6" y1="134.62" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="134.62" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="134.62" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="LVL" gate="G$1" pin="D_H"/>
+<pinref part="U$2" gate="G$1" pin="D_H"/>
 <wire x1="78.74" y1="142.24" x2="81.28" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="142.24" x2="81.28" y2="134.62" width="0.1524" layer="91"/>
 <junction x="81.28" y="134.62"/>
@@ -10044,7 +10044,7 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <pinref part="JP1" gate="1" pin="2"/>
 <wire x1="53.34" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="114.3" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="LVL" gate="G$1" pin="C_H"/>
+<pinref part="U$2" gate="G$1" pin="C_H"/>
 <wire x1="78.74" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="144.78" x2="83.82" y2="132.08" width="0.1524" layer="91"/>
 <junction x="83.82" y="132.08"/>
@@ -10062,7 +10062,7 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <wire x1="129.54" y1="160.02" x2="114.3" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="160.02" x2="83.82" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="160.02" x2="83.82" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="LVL" gate="G$1" pin="A_H"/>
+<pinref part="U$2" gate="G$1" pin="A_H"/>
 <wire x1="83.82" y1="149.86" x2="78.74" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="170.18" x2="114.3" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="170.18" x2="114.3" y2="160.02" width="0.1524" layer="91"/>
@@ -10079,7 +10079,7 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 <wire x1="129.54" y1="157.48" x2="111.76" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="157.48" x2="86.36" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="157.48" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="LVL" gate="G$1" pin="B_H"/>
+<pinref part="U$2" gate="G$1" pin="B_H"/>
 <wire x1="86.36" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="167.64" x2="111.76" y2="157.48" width="0.1524" layer="91"/>
 <junction x="111.76" y="157.48"/>
@@ -10088,7 +10088,7 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 </net>
 <net name="PB9/I2C1_SDA" class="0">
 <segment>
-<pinref part="LVL" gate="G$1" pin="A_L"/>
+<pinref part="U$2" gate="G$1" pin="A_L"/>
 <wire x1="48.26" y1="149.86" x2="10.16" y2="149.86" width="0.1524" layer="91"/>
 <label x="10.16" y="149.86" size="1.778" layer="95"/>
 </segment>
@@ -10100,7 +10100,7 @@ Source: http://cache.national.com/ds/LM/LM340.pdf</description>
 </net>
 <net name="PB8/I2C1_SCL" class="0">
 <segment>
-<pinref part="LVL" gate="G$1" pin="B_L"/>
+<pinref part="U$2" gate="G$1" pin="B_L"/>
 <wire x1="48.26" y1="147.32" x2="10.16" y2="147.32" width="0.1524" layer="91"/>
 <label x="10.16" y="147.32" size="1.778" layer="95"/>
 </segment>
