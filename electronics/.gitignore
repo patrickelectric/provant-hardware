@@ -1,0 +1,3 @@
+# Ignore eagle version files, i.e. schematic.s#3 or board.b#9
+*.b#?
+*.s#?
