@@ -10631,7 +10631,7 @@ naming: grid - package width</description>
 <part name="SPI1" library="con-tycoelectronics" deviceset="RJ11" device="" technology="-2L-B"/>
 <part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="US5_SONAR" library="con-tycoelectronics" deviceset="RJ11" device="" technology="-2L-B"/>
+<part name="US3_SONAR" library="con-tycoelectronics" deviceset="RJ11" device="" technology="-2L-B"/>
 <part name="Q1" library="transistor-npn" deviceset="BC548*" device=""/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
@@ -10765,9 +10765,9 @@ uma trilha no esquematico.</text>
 <instance part="U$2" gate="G$1" x="63.5" y="149.86"/>
 <instance part="I2C1_ESC" gate="G$1" x="132.08" y="160.02"/>
 <instance part="I2C3_IMU" gate="G$1" x="132.08" y="134.62"/>
-<instance part="GND11" gate="1" x="124.46" y="129.54" rot="R270"/>
+<instance part="GND11" gate="1" x="124.46" y="127" rot="R270"/>
 <instance part="SUPPLY5" gate="G$1" x="127" y="137.16" rot="R90"/>
-<instance part="SUPPLY6" gate="G$1" x="109.22" y="127" rot="R90"/>
+<instance part="SUPPLY6" gate="G$1" x="106.68" y="129.54" rot="R90"/>
 <instance part="SUPPLY8" gate="G$1" x="127" y="162.56" rot="R90"/>
 <instance part="GND12" gate="1" x="124.46" y="154.94" rot="R270"/>
 <instance part="ESC" gate="1" x="104.14" y="170.18" rot="R180"/>
@@ -10785,7 +10785,7 @@ uma trilha no esquematico.</text>
 <instance part="SPI1" gate="G$1" x="292.1" y="81.28"/>
 <instance part="SUPPLY12" gate="G$1" x="287.02" y="86.36" rot="R90"/>
 <instance part="GND19" gate="1" x="281.94" y="76.2" rot="R270"/>
-<instance part="US5_SONAR" gate="G$1" x="292.1" y="43.18"/>
+<instance part="US3_SONAR" gate="G$1" x="292.1" y="43.18"/>
 <instance part="Q1" gate="G$1" x="228.6" y="40.64" rot="MR0"/>
 <instance part="GND20" gate="1" x="284.48" y="38.1" rot="R270"/>
 <instance part="SUPPLY14" gate="G$1" x="284.48" y="45.72" rot="R90"/>
@@ -10848,7 +10848,7 @@ uma trilha no esquematico.</text>
 <instance part="SUPPLY34" gate="G$1" x="353.06" y="129.54" rot="R270"/>
 <instance part="SV4" gate="1" x="48.26" y="124.46" rot="R270"/>
 <instance part="SUPPLY7" gate="G$1" x="327.66" y="22.86" rot="MR90"/>
-<instance part="R11" gate="G$1" x="116.84" y="127"/>
+<instance part="R11" gate="G$1" x="116.84" y="129.54"/>
 <instance part="AN1" gate="G$1" x="383.54" y="17.78" rot="MR0"/>
 <instance part="GND18" gate="1" x="391.16" y="12.7" rot="R90"/>
 <instance part="JP1" gate="1" x="403.86" y="38.1"/>
@@ -10900,11 +10900,6 @@ uma trilha no esquematico.</text>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="I2C3_IMU" gate="G$1" pin="5"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="127" y1="129.54" x2="129.54" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="I2C1_ESC" gate="G$1" pin="5"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="127" y1="154.94" x2="129.54" y2="154.94" width="0.1524" layer="91"/>
@@ -10940,9 +10935,9 @@ uma trilha no esquematico.</text>
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
-<pinref part="US5_SONAR" gate="G$1" pin="5"/>
+<pinref part="US3_SONAR" gate="G$1" pin="5"/>
 <wire x1="287.02" y1="38.1" x2="289.56" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="US5_SONAR" gate="G$1" pin="6"/>
+<pinref part="US3_SONAR" gate="G$1" pin="6"/>
 <wire x1="289.56" y1="35.56" x2="289.56" y2="38.1" width="0.1524" layer="91"/>
 <junction x="289.56" y="38.1"/>
 </segment>
@@ -11042,6 +11037,11 @@ uma trilha no esquematico.</text>
 <wire x1="386.08" y1="10.16" x2="386.08" y2="12.7" width="0.1524" layer="91"/>
 <junction x="386.08" y="12.7"/>
 </segment>
+<segment>
+<pinref part="GND11" gate="1" pin="GND"/>
+<pinref part="I2C3_IMU" gate="G$1" pin="6"/>
+<wire x1="127" y1="127" x2="129.54" y2="127" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -11079,13 +11079,19 @@ uma trilha no esquematico.</text>
 </segment>
 <segment>
 <pinref part="SUPPLY14" gate="G$1" pin="5V"/>
-<pinref part="US5_SONAR" gate="G$1" pin="2"/>
+<pinref part="US3_SONAR" gate="G$1" pin="2"/>
 <wire x1="284.48" y1="45.72" x2="289.56" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="US3_SONAR" gate="G$1" pin="1"/>
+<wire x1="289.56" y1="48.26" x2="289.56" y2="45.72" width="0.1524" layer="91"/>
+<junction x="289.56" y="45.72"/>
 </segment>
 <segment>
 <pinref part="US6" gate="G$1" pin="2"/>
 <pinref part="SUPPLY17" gate="G$1" pin="5V"/>
 <wire x1="284.48" y1="20.32" x2="289.56" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="US6" gate="G$1" pin="1"/>
+<wire x1="289.56" y1="22.86" x2="289.56" y2="20.32" width="0.1524" layer="91"/>
+<junction x="289.56" y="20.32"/>
 </segment>
 <segment>
 <pinref part="SUPPLY22" gate="G$1" pin="5V"/>
@@ -11187,7 +11193,7 @@ uma trilha no esquematico.</text>
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="127" x2="111.76" y2="127" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="129.54" x2="111.76" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="1" pin="3"/>
@@ -11453,7 +11459,7 @@ uma trilha no esquematico.</text>
 </net>
 <net name="PC10/USART3_TX" class="0">
 <segment>
-<pinref part="US5_SONAR" gate="G$1" pin="3"/>
+<pinref part="US3_SONAR" gate="G$1" pin="3"/>
 <wire x1="289.56" y1="43.18" x2="254" y2="43.18" width="0.1524" layer="91"/>
 <label x="254" y="43.18" size="1.778" layer="95"/>
 </segment>
@@ -11465,7 +11471,7 @@ uma trilha no esquematico.</text>
 </net>
 <net name="SONAR_RX" class="0">
 <segment>
-<pinref part="US5_SONAR" gate="G$1" pin="4"/>
+<pinref part="US3_SONAR" gate="G$1" pin="4"/>
 <wire x1="289.56" y1="40.64" x2="246.38" y2="40.64" width="0.1524" layer="91"/>
 <label x="254" y="40.64" size="1.778" layer="95"/>
 <pinref part="Q1" gate="G$1" pin="B"/>
@@ -11692,13 +11698,6 @@ uma trilha no esquematico.</text>
 <label x="175.26" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="I2C3_IMU" gate="G$1" pin="6"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="127" x2="129.54" y2="127" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="ADC1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PC1"/>
@@ -11730,6 +11729,9 @@ uma trilha no esquematico.</text>
 <pinref part="AN1" gate="G$1" pin="1"/>
 <wire x1="386.08" y1="22.86" x2="403.86" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="403.86" y1="22.86" x2="403.86" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="AN1" gate="G$1" pin="2"/>
+<wire x1="386.08" y1="20.32" x2="386.08" y2="22.86" width="0.1524" layer="91"/>
+<junction x="386.08" y="22.86"/>
 </segment>
 </net>
 <net name="PA7/PWM" class="0">
@@ -11776,6 +11778,13 @@ uma trilha no esquematico.</text>
 <pinref part="U$2" gate="G$1" pin="B_L"/>
 <wire x1="40.64" y1="114.3" x2="40.64" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="147.32" x2="48.26" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="I2C3_IMU" gate="G$1" pin="5"/>
+<wire x1="121.92" y1="129.54" x2="129.54" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
