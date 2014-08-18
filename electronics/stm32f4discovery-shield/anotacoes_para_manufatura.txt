@@ -1,0 +1,6 @@
+Anotações para schematic-for-manuf.brd:
+
+Tamanho de furações (mínimo do fabricante = 0.4mm)
+- Para conectores RJ11 - pads = 0.7mm [0,027559 polegadas]
+- Para conectores RJ11 - dois conectores mecânicos laterais = 2.0mm [0,078740 polegadas]
+- Para DIP (todas as barras de pino e de soquete) = 0.9mm [0,035433 polegadas]
