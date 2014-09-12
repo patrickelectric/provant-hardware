@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8942,6 +8942,35 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <rectangle x1="-0.3048" y1="-0.3048" x2="0.3048" y2="0.3048" layer="51"/>
 <rectangle x1="2.2352" y1="-0.3048" x2="2.8448" y2="0.3048" layer="51"/>
 </package>
+<package name="JP2Q">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-2.159" x2="-2.54" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-0.381" y1="2.54" x2="0" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="0" y1="2.159" x2="0.381" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.381" y1="2.54" x2="2.159" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="2.159" x2="2.159" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="2.159" x2="2.54" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-2.159" x2="2.159" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="-2.54" x2="0.381" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0" y1="-2.159" x2="0.381" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0" y1="-2.159" x2="-0.381" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="2.159" x2="-2.159" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="2.54" x2="-0.381" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-2.159" x2="-2.159" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="-2.54" x2="-0.381" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="-1.27" drill="0.9144" shape="octagon"/>
+<pad name="2" x="1.27" y="-1.27" drill="0.9144" shape="octagon"/>
+<pad name="3" x="-1.27" y="1.27" drill="0.9144" shape="octagon"/>
+<pad name="4" x="1.27" y="1.27" drill="0.9144" shape="octagon"/>
+<text x="-1.778" y="-4.191" size="1.27" layer="21" ratio="10">1</text>
+<text x="0.762" y="-4.191" size="1.27" layer="21" ratio="10">2</text>
+<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="4.445" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.5748" y1="0.9652" x2="-0.9652" y2="1.5748" layer="51"/>
+<rectangle x1="0.9652" y1="0.9652" x2="1.5748" y2="1.5748" layer="51"/>
+<rectangle x1="0.9652" y1="-1.5748" x2="1.5748" y2="-0.9652" layer="51"/>
+<rectangle x1="-1.5748" y1="-1.5748" x2="-0.9652" y2="-0.9652" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JP3E">
@@ -8961,6 +8990,20 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pin name="2" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="3" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 </symbol>
+<symbol name="JP2E">
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0" x2="3.175" y2="0" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0" x2="3.175" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0.635" x2="-0.635" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.4064" layer="94"/>
+<text x="-1.27" y="0" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="1" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JP2E" prefix="JP" uservalue="yes">
@@ -8974,6 +9017,26 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
 <connect gate="1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JP2QE" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="-1" symbol="JP2E" x="2.54" y="0" addlevel="always"/>
+<gate name="-2" symbol="JP2E" x="12.7" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="JP2Q">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-1" pin="2" pad="2"/>
+<connect gate="-2" pin="1" pad="3"/>
+<connect gate="-2" pin="2" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10657,6 +10720,7 @@ naming: grid - package width</description>
 <part name="JP1" library="jumper" deviceset="JP2E" device=""/>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY26" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="JP2" library="jumper" deviceset="JP2QE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10692,7 +10756,7 @@ naming: grid - package width</description>
 * IC2 nao vem montado por default.
 * IC3 e IC4 nao vem montados por default.</text>
 <text x="175.26" y="167.64" size="1.778" layer="91">* Para os servos RX24f, montar IC1. 
-* Para servos Dongbu, remover IC1, e bypassar linhas de TX e RX atraves de JP1 e JP2.</text>
+* Para servos Dongbu, remover IC1, e bypassar linhas de TX e RX atraves de JP2-1 e JP2-2.</text>
 <text x="185.42" y="5.08" size="1.778" layer="91">* Para sonar XL-MaxSonar-EZ MB1200, soldar SJ1 na posiçao 2-3.
 * Para usar como linha de serial comum, soldar SJ1 na posiçao 1-2. </text>
 <text x="182.88" y="101.6" size="3.81" layer="94">SONAR</text>
@@ -10811,6 +10875,8 @@ uma trilha no esquematico.</text>
 <instance part="JP1" gate="1" x="403.86" y="38.1"/>
 <instance part="SUPPLY16" gate="G$1" x="406.4" y="35.56" rot="MR180"/>
 <instance part="SUPPLY26" gate="G$1" x="401.32" y="35.56" rot="R180"/>
+<instance part="JP2" gate="-1" x="177.8" y="137.16"/>
+<instance part="JP2" gate="-2" x="185.42" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -11300,6 +11366,11 @@ uma trilha no esquematico.</text>
 <junction x="269.24" y="119.38"/>
 <label x="271.78" y="119.38" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="-1" pin="2"/>
+<wire x1="180.34" y1="134.62" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
+<label x="180.34" y="114.3" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="D-/RX" class="0">
 <segment>
@@ -11317,6 +11388,11 @@ uma trilha no esquematico.</text>
 <junction x="266.7" y="121.92"/>
 <label x="271.78" y="121.92" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="-2" pin="2"/>
+<wire x1="187.96" y1="134.62" x2="187.96" y2="114.3" width="0.1524" layer="91"/>
+<label x="187.96" y="114.3" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="PB6/USART1_TX" class="0">
 <segment>
@@ -11331,6 +11407,11 @@ uma trilha no esquematico.</text>
 <wire x1="111.76" y1="40.64" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
 <label x="88.9" y="40.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="-1" pin="1"/>
+<wire x1="177.8" y1="134.62" x2="177.8" y2="114.3" width="0.1524" layer="91"/>
+<label x="177.8" y="114.3" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="PB7/USART1_RX" class="0">
 <segment>
@@ -11342,6 +11423,11 @@ uma trilha no esquematico.</text>
 <pinref part="U$1" gate="G$1" pin="PB7"/>
 <wire x1="142.24" y1="40.64" x2="162.56" y2="40.64" width="0.1524" layer="91"/>
 <label x="147.32" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="-2" pin="1"/>
+<wire x1="185.42" y1="134.62" x2="185.42" y2="114.3" width="0.1524" layer="91"/>
+<label x="185.42" y="114.3" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="PE2" class="0">
