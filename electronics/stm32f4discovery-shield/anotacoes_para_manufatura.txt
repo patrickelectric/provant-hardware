@@ -1,0 +1,24 @@
+Anotações para schematic-for-manuf.brd
+======================================
+
+Tamanho de furações (mínimo do fabricante = 0.4mm)
++ Para conectores RJ11 - pads = 0.7mm [0,027559 polegadas]
++ Para conectores RJ11 - dois conectores mecânicos laterais = 2.0mm [0,078740 polegadas]
++ Para DIP (todas as barras de pino e de soquete) = 0.9mm [0,035433 polegadas]
+
+Larguras de trilhas (mínimo do fabricante = 8mils)
++ Para malhas de sinais = 12 mil 
+	(para passar trilhas entre pads é adequado. O espaço entre pads é de ~34mils; sobram ~11 mils pra cada lado, o que fica ok com o mínimo de espaçamento de 8mils do fabricante)
++ Para as malhas de alimentação = 24 mil (Linhas de 5V, 3V3 e GND se necessário). rip
++ para uma malha de alimentação, quando ela estiver conectando o último elemento de uma linha = 16mil
+
+
+Tamanho dos pads: 
+
+
+Diferenças principais entre a placa para fresagem e para manufatura
+===================================================================
+
++ Parte-se do pressuposto de furos metalizados, que conectam o pad no TOP e no BOTTOM.
++ Utilizam-se trilhas partindo dos pads do TOP dos conectores RJ12 e no soquete da Discovery (barra-pino).
++ A tolerância apresentada na seção anterior permite o uso de trilhas passando por entre pads. 
