@@ -14,7 +14,7 @@ Larguras de trilhas (mínimo do fabricante = 8mils)
 
 
 Tamanho dos pads: 
-
++ Pads e vias serao octogonais com 66mil de diametro. 
 
 Diferenças principais entre a placa para fresagem e para manufatura
 ===================================================================
