@@ -60,6 +60,7 @@
 <wire x1="40.945" y1="13.335" x2="40.945" y2="77.46" width="0" layer="20"/>
 <wire x1="40.945" y1="77.46" x2="1.905" y2="77.46" width="0" layer="20"/>
 <wire x1="1.905" y1="77.46" x2="1.905" y2="13.335" width="0" layer="20"/>
+<text x="13.97" y="35.56" size="1.778" layer="16" rot="MR0">1</text>
 </plain>
 <libraries>
 <library name="con-molex">
