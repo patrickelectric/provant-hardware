@@ -64,9 +64,13 @@ Com estes pinos conectados em seus respectivos lugares, pode ser realizado os te
 
 ###### Software
 Com os pinos conectados em um microcontrolador ou numa interface USB-serial, pode-se iniciar a comunicacao, com o baudrate de 9600, pedindo ao dispostivo a melhor posicao utilizando o comando:
-```LOG COM1 BESTPOSA ONTIME 1```
+```
+LOG COM1 BESTPOSA ONTIME 1
+```
 Enquanto o GPS nao detectar a posicao, ele retornada a msg:
-```#BESTPOSA,COM1,0,93.0,UNKNOWN,0,90.000,004c0000,7145,12014;INSUFFICIENT_OBS,NONE,0.00000000000,0.00000000000,0.0000,0.0000,WGS84,0.0000,0.0000,0.0000,"",0.000,0.000,0,0,0,0,0,00,00,00*18de8d75```
+```
+#BESTPOSA,COM1,0,93.0,UNKNOWN,0,90.000,004c0000,7145,12014;INSUFFICIENT_OBS,NONE,0.00000000000,0.00000000000,0.0000,0.0000,WGS84,0.0000,0.0000,0.0000,"",0.000,0.000,0,0,0,0,0,00,00,00*18de8d75
+```
 
 Um exemplo de codigo para ter uma comunicacao do GPS pode ser encontrado abaixo, este mesmo codigo pode ser utilizado para realizar a comunicacao do GPS com o VANT.
 
