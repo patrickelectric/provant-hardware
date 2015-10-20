@@ -17,7 +17,7 @@ Nesta pasta se encontra o conector utilizado para adaptar o conector do GPS OEMS
 ##### Arduino_mini
 
 Esta pasta em questao consta o conversor das mensagens do GPS para o VANT.
-As mensagens que sao enviadas em formato de String sao de dificil tratamento utilizando as bibliotecas basicas do ARM que estao sendo atualizamente utizadas no projeto.
+As mensagens que sao enviadas em formato de String sao de dificil tratamento utilizando as bibliotecas basicas do ARM que estao sendo atualmente utizadas no projeto.
 Podendo variar o tamanho, formato e tipo.
 As informacoes sobre as mensagens e o GPS podem ser encontradas [aqui](http://www.novatel.com/assets/Documents/Bulletins/apn026.pdf).
 
@@ -33,9 +33,9 @@ Boa parte da documentacao do GPS OEMStar pode ser encontrado dentro do Dropbox d
 > proVANT/birotor/components/electronics/datasheets/sensors/GPS/novatek_oemstar
 
 ##### Iniciando comunicacao
-Primeiramente deve ser feito uma das conectores, podendo ser tanto o connectorr_protoboard quanto o connector_cable, pois ambos dao acesso aos pinos basicos ditos anteriormente.
+Primeiramente deve ser feito um dos conectores, podendo ser tanto o connector_protoboard quanto o connector_cable, pois ambos dao acesso aos pinos basicos ditos anteriormente.
 
-Os pinos que deveram ser conectador seram: 1,2 como VCC; 10,13,16,18 como GND; 11 como TX; 12 como RX;
+Os pinos que deveram ser conectados sao: 1,2 como VCC; 10,13,16,18 como GND; 11 como TX; 12 como RX;
 
 | Signal   | Behavior       | Descriptions                                                      | Pin |
 |----------|----------------|-------------------------------------------------------------------|-----|
@@ -73,6 +73,7 @@ Enquanto o GPS nao detectar a posicao, ele retornada a msg:
 ```
 
 Um exemplo de codigo para ter uma comunicacao do GPS pode ser encontrado abaixo, este mesmo codigo pode ser utilizado para realizar a comunicacao do GPS com o VANT.
+Este codigo foi utilizado para a placa arduino_mini, utilizando os pinos 10 e 11 para a comunicacao serial via software.
 
 ```
 // all the information about the data can be obtained from: http://www.novatel.com/assets/Documents/Bulletins/apn026.pdf
