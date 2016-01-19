@@ -32,6 +32,9 @@ Alguns exemplos de mensagens recebidas:
 Boa parte da documentacao do GPS OEMStar pode ser encontrado dentro do Dropbox do projeto.
 > proVANT/birotor/components/electronics/datasheets/sensors/GPS/novatek_oemstar
 
+As bibliotecas para realizar a comunicação do GPS com o VANT esta localizado em:
+> provant-software/io-board/stm32f4/base/modules/io/c_io_novatel.c/h
+
 ##### Iniciando comunicacao
 Primeiramente deve ser feito um dos conectores, podendo ser tanto o connector_protoboard quanto o connector_cable, pois ambos dao acesso aos pinos basicos ditos anteriormente.
 
